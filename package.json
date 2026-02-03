@@ -1,0 +1,18 @@
+{
+  "name": "uix",
+  "version": "1.0.0",
+  "description": "UIX One-file Web App Language",
+  "keywords": [
+    "uix",
+    "web",
+    "sql",
+    "wasm"
+  ],
+  "license": "ISC",
+  "author": "Thwin Thit Htoo",
+  "type": "commonjs",
+  "main": "all.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

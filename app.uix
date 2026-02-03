@@ -1,0 +1,32 @@
+app "Todo"
+
+ui {
+  column {
+    text "My Todos"
+    input text todoText
+    button "Add" addTodo
+    list todos {
+      item {
+        text row.text
+        button "Delete" deleteTodo
+      }
+    }
+  }
+}
+
+db {
+  table todos {
+    id auto
+    text string
+  }
+}
+
+fn addTodo {
+  insert todos todoText
+  refresh todos
+}
+
+fn deleteTodo {
+  delete todos
+  refresh todos
+}
